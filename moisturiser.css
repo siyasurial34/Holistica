@@ -1,0 +1,328 @@
+/* ------------------ Section ------------------ */
+.moisturizers {
+  padding: 3rem 2rem;
+  background: white;
+  text-align: center;
+}
+
+.moisturizers h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  margin-top: -1.5rem;
+}
+
+.moisturizers p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  margin-top: -2rem;
+}
+
+/* ------------------ Filter Buttons ------------------ */
+/* ------------------ Filter Buttons ------------------ */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 2rem 0;
+}
+
+.filter-btn {
+  padding: 0.6rem 1.4rem;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 999px;        /* pill shape */
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.filter-btn:hover {
+  background: #f7f5f2;
+  border-color: #bbb;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.filter-btn.active {
+  background: #D4CFC4;        /* matches site accent */
+  color: #3A3A3A;             /* dark text for contrast */
+  border-color: #D4CFC4;
+  box-shadow: 0 4px 12px rgba(212, 207, 196, 0.4);
+}
+
+/* ------------------ Product Grid ------------------ */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem 1rem;
+  justify-items: center;
+}
+
+/* ------------------ Product Card ------------------ */
+.product-card {
+  background: #fff;
+  border-radius: 0;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 280px;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+/* ------------------ Image Wrapper ------------------ */
+/* ------------------ Image Wrapper ------------------ */
+.product-image-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+  background: none;        /* remove background line */
+  border: none;            /* remove any border */
+  margin-bottom: 0.8rem;   /* spacing below image */
+}
+
+.product-image-wrapper img {
+  width: 100%;
+  height: auto;          /* allows full image to show */
+  max-height: 260px;     /* limits very tall images */
+  object-fit: contain;   /* ensures full image fits inside */
+  display: block;        /* removes extra space below image */
+  border-radius: 16px;
+  transition: transform 0.4s ease;
+}
+/* ------------------ Add to Cart Button ------------------ */
+.add-cart {
+  margin-top: 0.8rem;           /* moves button below the image */
+  padding: 0.6rem 1.5rem;
+  border-radius: 0;              /* pill shape if needed */
+  background: #D4CFC4;           /* your original color */
+  color: #3A3A3A;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  display: inline-block;
+}
+
+.add-cart:hover {
+  background: #C0B8AC;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+/* ------------------ Product Title ------------------ */
+.product-title {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+  margin-top: 0.8rem;
+  line-height: 1.3;
+  height: 3.6em; /* keeps all cards same height */
+  overflow: hidden;
+}
+
+/* ------------------ Responsive ------------------ */
+@media (max-width: 1024px) {
+  .product-image-wrapper img {
+    height: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+  .product-image-wrapper img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+  .product-image-wrapper img {
+    height: 200px;
+  }
+}
+
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #F5F2EB;/* same as navbar */
+  border-radius:0;      /* sharp edges */
+  overflow: hidden;
+}
+
+.search-input {
+  border: none;
+  padding: 1.5 rem 2 rem;
+  outline: none;
+  background: transparent; /* same as navbar */
+  color: #3A3A3A;
+  font-size: 0.9rem;
+  width: 180px;
+}
+
+.search-input::placeholder {
+  color: #3A3A3A;         /* placeholder same color */
+}
+
+.search-btn {
+  border: none;
+  background: transparent; /* same as navbar */
+  padding: 0.5rem 0.8rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-btn svg {
+  color: #3A3A3A;          /* icon same color */
+}
+/* ------------------ Shop by Skin Type Title ------------------ */
+.skin-type-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+/* ------------------ Hero Section ------------------ */
+.hero-moisturizers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #F5F2EB;
+  padding: 4rem 3rem;
+  align-items: center;
+  gap: 3rem;
+  border-radius: 0;        /* remove rounding to fill screen */
+  overflow: hidden;
+  margin-top: 0;           /* no margin so it sticks to edges */
+  width: 100vw;            /* take full viewport width */
+  height: 100vh;           /* take full viewport height */
+}
+
+
+/* Text Side */
+.hero-text h4 {
+  font-size: 0.95rem;
+  color: black; /* elegant purple accent */
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.hero-text h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #2b2b2b;
+  margin-bottom: 1.2rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.hero-text {
+  text-align: center;   /* centers all text inside */
+}
+
+.hero-text p {
+  font-size: 1.05rem;
+  color: #555;
+  max-width: 450px;
+  margin: 0 auto 1.8rem;  /* centers the paragraph block */
+  line-height: 1.6;
+}
+
+/* Image Side */
+.hero-image {
+  position: relative;
+  border-radius: 0;
+  overflow: hidden;
+  margin-top: 4rem;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 0;
+  object-fit: cover;
+  display: block;
+  height: 100%;
+}
+
+/* Gradient Overlay */
+.hero-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0));
+  border-radius: 0;
+}
+
+/* Overlay text */
+.overlay-text {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  right: 1.5rem;
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.4;
+  z-index: 2;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .hero-moisturizers {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text p {
+    margin: 0 auto 1.5rem;
+  }
+
+  .overlay-text {
+    font-size: 0.95rem;
+    bottom: 1rem;
+  }
+}
+/* Footer */
+footer {
+    background-color: #C0B8AC;
+    color: #3A3A3A;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}

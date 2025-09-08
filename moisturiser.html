@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holistica - Moisturisers</title>
+  <link rel="stylesheet" href="style.css"> <!-- Navbar CSS -->
+  <link rel="stylesheet" href="moisturiser.css"> <!-- Page-specific CSS -->
+</head>
+<body>
+  <!-- Navbar -->
+ <!-- Navbar (same as homepage) -->
+   <header class="navbar">
+  <nav class="nav-left">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Wellness</a>
+      <a href="#">Contact</a>
+  </nav>
+
+  <div class="logo">Holistica</div>
+
+  <div class="nav-right">
+  <!-- Search Bar -->
+  <div class="search-container">
+    <input type="text" placeholder="Search products..." class="search-input">
+    <button class="search-btn">
+      <!-- SVG Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85zm-5.242 1.153a5 5 0 1 1 0-10 5 5 0 0 1 0 10z"/>
+      </svg>
+    </button>
+  </div>
+<!-- Wishlist Icon -->
+<div class="wishlist-container">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 
+             4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 
+             14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 
+             6.86-8.55 11.54L12 21.35z"/>
+  </svg>
+  <span class="wishlist-count">0</span>
+</div>
+
+
+  <!-- Cart Icon -->
+  <div class="cart-container">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+      <path d="M0 1a1 1 0 0 1 1-1h1.5a1 1 0 0 1 .96.74L3.89 2H14a1 1 0 0 1 .97 1.243l-1.5 6A1 1 0 0 1 12.5 10H4a1 1 0 0 1-1-.895L1.61 2.607 1.11 1H1a1 1 0 0 1-1-1zm5 12a2 2 0 1 0 4 0H5zM11 13a2 2 0 1 0 4 0h-4z"/>
+    </svg>
+    <span class="cart-count">0</span>
+  </div>
+  </div>
+</header>
+
+
+<!-- Moisturizer Section -->
+<section class="hero-moisturizers">
+  <div class="hero-text">
+    <h4>Discover</h4>
+    <h1>Bestselling Moisturisers</h1>
+    <p>Shop face creams, night creams, and deeply hydrating moisturisers crafted for every skin type.</p>
+  </div>
+
+  <div class="hero-image">
+    <img src="https://www.shutterstock.com/image-photo/beauty-skin-care-skincare-hydration-600nw-2342278775.jpg" alt="Applying moisturizer">
+    <div class="overlay-text">
+      Explore result-driven essentials, approved by experts.
+    </div>
+  </div>
+</section>
+
+
+<section class="moisturizers">
+  <div class="container">
+    <p>Find your perfect moisturizer for healthy, glowing skin.</p>
+    
+     <!-- Shop by Skin Type Heading -->
+    <h3 class="skin-type-title">Shop by Skin Type</h3>
+
+    <!-- Skin Type Filter Buttons -->
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="oily">Oily</button>
+      <button class="filter-btn" data-filter="dry">Dry</button>
+      <button class="filter-btn" data-filter="acne-prone">Acne Prone</button>
+      <button class="filter-btn" data-filter="combination">Combination</button>
+      <button class="filter-btn" data-filter="sensitive">Sensitive</button>
+    </div>
+<!-- Product Grid -->
+<div class="product-grid">
+  <!-- Product Card -->
+
+    <div class="product-card" data-category="dry">
+    <div class="product-image-wrapper">
+      <img src="https://images-static.nykaa.com/media/catalog/product/5/d/5d709cc4891080614470_x1.jpg" alt="Night Cream">
+      <button class="add-cart">Add to Cart</button>
+      <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+    </div>
+    <h3 class="product-title">Neutrogena Hydro Boost Hyaluronic Acid Water Gel Light Face Moisturizer For Normal, Dry & Oily Skin</h3>
+  </div>
+
+    <div class="product-card" data-category="sensitive">
+    <div class="product-image-wrapper">
+      <img src="https://images-static.nykaa.com/media/catalog/product/1/e/1e2ba768806182535468_8.jpg?tr=w-500" alt="Face Oil">
+      <button class="add-cart">Add to Cart</button>
+      <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+    </div>
+    <h3 class="product-title">The Face Shop Rice & Ceramide Emulsion - Korean Brightening Moisturizer/Cream for Dull & Dry Skin</h3>
+  </div>
+  
+  <div class="product-card" data-category="oily">
+    <div class="product-image-wrapper">
+      <img src="https://images-static.nykaa.com/media/catalog/product/b/b/bbe1986DOTKE00000054_1a.jpg" alt="Face Moisturizer">
+      <button class="add-cart">Add to Cart</button>
+      <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+    </div>
+    <h3 class="product-title">Dot & Key Vitamin C + E Super Bright Face Moisturizer For Glowing Skin, Fades Dark Spots</h3>
+  </div>
+
+  <div class="product-card" data-category="sensitive">
+    <div class="product-image-wrapper">
+      <img src="https://images-static.nykaa.com/media/catalog/product/4/a/4a822bcCERAV00000001_1.jpg" alt="Face Oil">
+      <button class="add-cart">Add to Cart</button>
+      <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+    </div>
+    <h3 class="product-title">CeraVe Moisturizer Cream For Dry Skin With Ceramides, Niacinamide & Hyaluronic Acid For Barrier Repair</h3>
+  </div>
+  
+  <div class="product-card" data-category="sensitive">
+    <div class="product-image-wrapper">
+      <img src="https://sdcdn.io/cl/cl_sku_KWW301_2500x2500_0.png" alt="Face Oil">
+      <button class="add-cart">Add to Cart</button>
+      <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+    </div>
+    <h3 class="product-title">clinique moisture surge 100h auto-replenishing hydrator (moisturizer)</h3>
+  </div>
+
+    <div class="product-card" data-category="sensitive">
+    <div class="product-image-wrapper">
+      <img src="https://images-static.nykaa.com/media/catalog/product/0/b/0b2b7acPLUMX00000641_1.jpg" alt="Face Oil">
+      <button class="add-cart">Add to Cart</button>
+      <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+    </div>
+    <h3 class="product-title">Plum 2% Niacinamide And Rice Water Moisturiser - Lightweight Gel Cream For Oil-Free Hydration</h3>
+  </div>
+
+  <div class="product-card" data-category="sensitive">
+    <div class="product-image-wrapper">
+      <img src="https://images-static.nykaa.com/media/catalog/product/2/a/2aa71cbNYCETA0000005_1.jpg" alt="Face Oil">
+      <button class="add-cart">Add to Cart</button>
+      <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+    </div>
+    <h3 class="product-title">Cetaphil Moisturising Cream for dry to very dry Sensitive skin, Dermatologist Recommended</h3>
+  </div>
+
+    <div class="product-card" data-category="sensitive">
+    <div class="product-image-wrapper">
+      <img src="https://images-static.nykaa.com/media/catalog/product/b/6/b67c3d48809416470016_1.jpg" alt="Face Oil">
+      <button class="add-cart">Add to Cart</button>
+      <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+    </div>
+    <h3 class="product-title">COSRX Advanced Snail Mucin 92 All In One Cream with Hyaluronic Acid</h3>
+  </div>
+
+  <div class="product-card" data-category="sensitive">
+    <div class="product-image-wrapper">
+      <img src="https://images-static.nykaa.com/media/catalog/product/d/6/d6d0051PONDS00000113_1aG.jpg" alt="Face Oil">
+      <button class="add-cart">Add to Cart</button>
+      <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+    </div>
+    <h3 class="product-title">Ponds Super Light Gel Oil-Free Moisturize with Hyaluronic Acid & Vitamin E 24HR Hydration</h3>
+  </div>
+
+  <div class="product-card" data-category="sensitive">
+    <div class="product-image-wrapper">
+      <img src="https://images-static.nykaa.com/media/catalog/product/b/b/bbe1986DOTKE00000199_1a.jpg" alt="Face Oil">
+      <button class="add-cart">Add to Cart</button>
+      <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+    </div>
+    <h3 class="product-title">Dot & Key Hyaluronic + Ceramide Barrier Repair Hydrating Face Moisturizer Ph 5.5 Cream, Normal To Dry Skin</h3>
+  </div>
+
+  <div class="product-card" data-category="sensitive">
+    <div class="product-image-wrapper">
+      <img src="https://images-static.nykaa.com/media/catalog/product/2/a/2aa71cbNYCETA0000007_1.jpg" alt="Face Oil">
+      <button class="add-cart">Add to Cart</button>
+      <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+    </div>
+    <h3 class="product-title">Cetaphil Moisturising Lotion For Dry To Normal Sensitive Skin - Dermatologist Recommended</h3>
+  </div>
+
+  
+  <div class="product-card" data-category="sensitive">
+    <div class="product-image-wrapper">
+      <img src="https://images-static.nykaa.com/media/catalog/product/3/9/394e9c5MINIM00000036_a.jpg" alt="Face Oil">
+      <button class="add-cart">Add to Cart</button>
+      <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+    </div>
+    <h3 class="product-title">Minimalist Vitamin B5 10% Moisturizer</h3>
+  </div>
+
+  <div class="product-card" data-category="sensitive">
+    <div class="product-image-wrapper">
+      <img src="https://images-static.nykaa.com/media/catalog/product/a/b/ab0867e8901030753794_x1.jpg?tr=w-344,h-344,cm-pad_resize" alt="Face Oil">
+      <button class="add-cart">Add to Cart</button>
+      <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+    </div>
+    <h3 class="product-title">Lakme Perfect Radiance Day Gel Crème with 10% Niacinamide Resorcinol Complex & Antioxidants</h3>
+  </div>
+
+  <div class="product-card" data-category="sensitive">
+    <div class="product-image-wrapper">
+      <img src="https://images-static.nykaa.com/media/catalog/product/1/e/1e51769N_3401399459085_1.jpg" alt="Face Oil">
+      <button class="add-cart">Add to Cart</button>
+      <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+    </div>
+    <h3 class="product-title">Bioderma Atoderm Creme Ultra-Nourising Moisturising Cream Boosts Hyaluronic Acid, Ceramides</h3>
+  </div>
+
+  <div class="product-card" data-category="sensitive">
+    <div class="product-image-wrapper">
+      <img src="https://images-static.nykaa.com/media/catalog/product/c/9/c92aa51SDYOUX00000003_1.jpg" alt="Face Oil">
+      <button class="add-cart">Add to Cart</button>
+      <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+    </div>
+    <h3 class="product-title">d'you In My Defence Barrier-Building Moisturiser With 20x More Ceramides (Lightweight & Non-Greasy)</h3>
+  </div>
+
+  <div class="product-card" data-category="sensitive">
+    <div class="product-image-wrapper">
+      <img src="https://images-static.nykaa.com/media/catalog/product/6/1/61d1656REEQU00000037_1s.jpg" alt="Face Oil">
+      <button class="add-cart">Add to Cart</button>
+      <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+    </div>
+    <h3 class="product-title">Reequil 0.1% Retinol Night Creamtreat For Wrinkles & Skin Tightening</h3>
+  </div>
+</div>
+</section>
+
+<!-- Footer -->
+    <footer>
+        <p>© 2025 Holistica. All Rights Reserved.</p>
+    </footer>
+    
+</body>
+</html>

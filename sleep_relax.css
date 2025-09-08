@@ -1,0 +1,477 @@
+/* ------------------ Sleep Hero ------------------ */
+.sleep-hero {
+  margin-top: 80px; /* same as navbar height */
+}
+
+.sleep-hero.split {
+  display: flex;
+  height: 90vh;
+}
+
+.hero-left, .hero-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.hero-left {
+  background-color: #F5F2EB;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero-left h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-left p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.hero-right {
+  background-color: #F5F2EB;
+}
+
+.hero-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ------------------ Sleep Concerns Cards ------------------ */
+.shop-concern {
+  padding: 2rem;
+  background-color: white;
+}
+
+.shop-concern h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.concern-cards-scroll {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scrollbar-width: none;
+}
+
+.concern-cards-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.concern-card {
+  background: white;
+  border-radius: 2px;
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.concern-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.concern-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.card-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 1.1rem;
+  text-align: center;
+  z-index: 2;
+  width: 90%;
+  max-width: 250px;
+  line-height: 1.4;
+}
+
+.concern-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.concern-card:hover img {
+  transform: scale(1.05);
+}
+
+/* ------------------ Routine Guide ------------------ */
+.routine-guide {
+  padding: 3rem 2rem;
+  background: #F5F2EB;
+  text-align: center;
+}
+
+.routine-guide h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #3A3A3A;
+}
+
+.routine-sub {
+  color: #666;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.routine-steps {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: nowrap;
+}
+
+.routine-card {
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  background: #fff;
+  position: relative;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+.card-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.card-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.card-info {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  transition: top 0.6s ease;
+}
+
+.card-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+  color: #333;
+}
+
+.card-info p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.routine-card:hover img {
+  transform: translateY(-100%);
+}
+
+.routine-card:hover .card-info {
+  top: 0;
+}
+
+
+/* Sleep & Relaxation Products */
+.sleep-products {
+  padding: 3rem 2rem;
+  background: #F5F2EB;  /* wellness calm tone */
+  text-align: center;
+}
+
+.sleep-products h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #3A3A3A;
+}
+
+.sleep-products .sleep-sub {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+/* Grid Layout */
+.sleep-product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Product Card */
+.sleep-product-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  padding: 1.5rem 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sleep-product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.sleep-product-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.sleep-product-card p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.sleep-product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+/* Sleep & Relaxation Products */
+.sleep-products {
+  padding: 3rem 2rem;
+  background: #F5F2EB;  /* wellness calm tone */
+  text-align: center;
+}
+
+.sleep-products h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #3A3A3A;
+}
+
+.sleep-products .sleep-sub {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+/* Grid Layout */
+.sleep-product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Product Card */
+.sleep-product-card {
+  background: #fff;
+  border-radius: 0;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  padding: 1.5rem 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sleep-product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 0;
+  margin-bottom: 1rem;
+}
+
+.sleep-product-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.sleep-product-card p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.sleep-product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+/* ------------------ Sleep Essentials / Ingredients ------------------ */
+.ingredients-love {
+  padding: 3rem 1.5rem;
+  background: #fff;
+  text-align: center;
+}
+
+.ingredients-love h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.ingredient-grid {
+  display: flex;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scroll-behavior: smooth;
+}
+
+.ingredient-card {
+  flex: 0 0 220px;
+  height: 300px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  border-radius: 0;
+}
+
+.ingredient-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.2);
+}
+
+.ingredient-name {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+}
+
+.ingredient-name h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.ingredient-name p {
+  margin: 0.2rem 0 0 0;
+  font-size: 0.9rem;
+}
+
+/* ------------------ Footer ------------------ */
+footer {
+  background-color: #C0B8AC;
+  color: #3A3A3A;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+/* Sleep Video Full Card */
+.sleep-video-full {
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+}
+
+.video-full-card {
+  position: relative;
+  width: 90%;
+  max-width: 1000px;
+  height: 400px; /* adjust height as you like */
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.video-full-card video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* makes video fill without distortion */
+  object-position: center; /* centers the crop */
+  filter: brightness(65%);
+}
+
+
+/* Overlay text */
+.video-overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  padding: 1rem 2rem;
+  max-width: 700px;
+}
+
+.video-overlay-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.video-overlay-text p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.shop-btn {
+  display: inline-block;
+   margin: -2rem 0 2rem; 
+   padding: 0.5rem 1.2rem;
+  background: #C0B8AC; /* adjust to match your site color */
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius:0;
+  transition: 0.3s ease;
+  font-size: 0.9rem;
+}
+.shop-btn:hover {
+  background: #c0b7a9; /* darker shade for hover */
+}
