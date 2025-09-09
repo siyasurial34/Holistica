@@ -264,15 +264,7 @@
     </footer>
 
     <script>
-    const toggleBtn = document.getElementById('theme-toggle');
-    const body = document.body;
-
-    toggleBtn.addEventListener('click', () => {
-        body.classList.toggle('dark');
-        toggleBtn.textContent = body.classList.contains('dark') ? '☀' : '🌙';
-    });
-  
-document.getElementById('theme-toggle').addEventListener('change', function() {
+  document.getElementById('theme-toggle').addEventListener('change', function() {
   document.body.classList.toggle('dark', this.checked);
 });
 
@@ -299,15 +291,6 @@ document.getElementById('theme-toggle').addEventListener('change', function() {
 
   // Auto-slide
   let slideTimer = setInterval(nextSlide, slideInterval);
-
-  // Dot navigation
-  dots.forEach((dot, i) => {
-    dot.addEventListener('click', () => {
-      showSlide(i);
-      clearInterval(slideTimer); // reset timer when manually clicked
-      slideTimer = setInterval(nextSlide, slideInterval);
-    });
-  });
 
   // Initialize first slide
   showSlide(0);
